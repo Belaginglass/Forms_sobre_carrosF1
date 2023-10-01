@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../002/imagens/favicon.ico" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Pesquisa de interrese sobre aquisição de carros esportivos</h1>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <h2>Dados da Pesquisa</h2>
+        <label for="name">Digite seu nome: </label>
+        <input type="text" name="name" id="name"> <br>
+        <label for="date">Selecione a data: </label>
+        <input type="date" name="date" id="date"> <br>
+        <label for="email">Digite seu email: </label>
+        <input type="email" name="email" id="email"> <br>
+        <label for="phone">Digite seu telefone: </label>
+        <input type="tel" name="phone" id="phone"> <br>
+        <label for="veiculo">Já possui um veículo: </label>
+        <input type="checkbox" name="veiculo" id="veiculo"> <br>
+        <label for="states">Estado de residência: </label>
+        <input type="text" maxlength="2" name="states" id="states"> <br>
+        <input type="submit" value="Enviar resposta" />
+    </form>
+</body>
+</html>
