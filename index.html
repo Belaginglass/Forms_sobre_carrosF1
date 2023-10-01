@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../002/imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Forms_sobre_carrosF1/imagens/favicon.ico" type="image/x-icon">
     <title>Formulário</title>
 </head>
+
 <body>
     <h1>Pesquisa de interrese sobre aquisição de carros esportivos</h1>
     <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
@@ -22,7 +24,18 @@
         <input type="checkbox" name="veiculo" id="veiculo"> <br>
         <label for="states">Estado de residência: </label>
         <input type="text" maxlength="2" name="states" id="states"> <br>
-        <input type="submit" value="Enviar resposta" />
+        <input type="submit" value="Enviar resposta"> <br>
+
+        <h3>Fabricantes de veículos</h3>
+        <label for="fabricantes">Selecione os fabricantes escolhidos por você</label> <br>
+        <select name="fabricante" id="fabricante" multiple size="5">
+            <option value="mclaren">McLaren</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="alpine">Alpine(Renault)</option>
+            <option value="astonmartin">Aston Martin</option>
+        </select>
     </form>
 </body>
+
 </html>
