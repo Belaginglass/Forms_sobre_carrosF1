@@ -47,6 +47,21 @@
         <input type="radio" name="a53" id="a53" value="a53"> <br>
         <label for="amr23">AMR23 Aston Martin</label>
         <input type="radio" name="amr23" id="amr23" value="amr23"> <br>
+        <h3>Estilização</h3>
+        <label for="color">Escolha a cor de preferencia: </label>
+        <input type="color" name="color" id="color">
+
+        <h3>Faixa de preço</h3>
+        <label for="faixapreco">Faixa de Preço em milhões</label>
+        <input type="range" name="vol" value="0" min="0" max="1000" oninput="faixapreco.value=value"
+            onchange="faixapreco.value=value">
+        <input type="text" id="faixapreco" value="0" readonly>
+        <hr>
+        <label for="coments">Comentários abaixo:
+            <br> <textarea name="coments" id="coments" cols="30" rows="10" style="width: 100%;"></textarea>
+        </label>
+        <input type="submit" value="Enviar"> <br>
+        <input type="reset" value="Novo comentário"> <br>
     </form>
 </body>
 
